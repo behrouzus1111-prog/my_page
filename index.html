@@ -3,29 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>صفحه با فریم وسط</title>
+    <title>متن فارسی بالای کادر</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="page-container">
-        <div class="center-frame">
-            <div class="frame-header">
-                <h1>به صفحه من خوش آمدید</h1>
-                <p>این یک فریم ساده در وسط صفحه است</p>
-            </div>
-            
-            <div class="frame-body">
-                <p>گوشه های این فریم گرد هستند</p>
-                <p>مرز فریم به رنگ مشکی است</p>
-                <p>پس زمینه داخل فریم سفید است</p>
-            </div>
-            
-            <div class="frame-footer">
-                <p>طراحی شده با HTML و CSS</p>
-            </div>
+    <!-- متن فارسی بالای کادر -->
+    <h1 class="persian-text">بعضی از جاها فقط با عدد های خاص باز میشن مثل سال تولدت</h1>
+    
+    <!-- کادر با گوشه‌های گرد -->
+    <div class="rounded-box">
+        <!-- اضافه کردن کادر ورود رمز -->
+        <div class="password-container">
+            <input type="password" id="passwordInput" maxlength="4" placeholder="" class="password-input">
+            <div class="error-message" id="errorMessage"></div>
         </div>
     </div>
     
+    <!-- اضافه کردن دکمه ادامه -->
+    <button id="continueBtn" class="continue-btn">ادامه</button>
+
     <script src="script.js"></script>
 </body>
 </html>
