@@ -61,20 +61,13 @@ function updateContinueButton() {
 }
 
 // تابع هدایت به صفحه بعدی
+// تابع هدایت به صفحه بعدی
 function goToNextPage() {
     if (isPasswordCorrect) {
-        alert("رمز صحیح است! انتقال به صفحه بعد...");
-        // در اینجا می‌توانید به صفحه بعدی هدایت کنید
-        // window.location.href = "page2.html";
-        
-        // برای نمونه یک تغییر ساده در صفحه
-        document.body.style.background = "linear-gradient(135deg, #667eea 0%, #764ba2 100%)";
-        document.querySelector('.persian-text').textContent = "خوش آمدید!";
-        document.querySelector('.rounded-box').style.display = "none";
-        continueBtn.style.display = "none";
+        // هدایت به صفحه دوم واقعی
+        window.location.href = "page2.html";
     }
 }
-
 // رویدادهای ورودی رمز
 passwordInput.addEventListener('input', checkPassword);
 
